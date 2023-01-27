@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  height: 100vh;
   font-family: "Epilogue", sans-serif;
   background-color: hsl(0deg, 0%, 98%);
 }
@@ -131,7 +132,6 @@ button {
     display: block;
   }
 }
-
 main {
   display: flex;
   width: 100%;

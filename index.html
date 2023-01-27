@@ -21,33 +21,40 @@
         <img class="header__Logo" src="/css/images/logo.svg" alt="" />
       </figure>
 
-      <div class="header__menus">
-        <figure><img src="./css/images/icon-menu.svg" alt="" /></figure>
-        <figure><img src="./css/images/icon-close-menu.svg" alt="" /></figure>
-
-        <ul class="header__Info">
-          <li>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li--submenu1 header__ul--li">
             Features
-            <ul class="header__Submenu">
-              <li class="header__Submenu--minilogos">
+            <img
+              class="header__li--up1"
+              src="./css/images/icon-arrow-up.svg"
+              alt=""
+            />
+            <img
+              class="header__li--down1"
+              src="./css/images/icon-arrow-down.svg"
+              alt=""
+            />
+            <ul class="header__Submenu1">
+              <li class="header__SubmenuOptions">
                 <figure>
                   <img src="./css/images/icon-todo.svg" alt="" />
                 </figure>
                 Todo List
               </li>
-              <li class="header__Submenu--minilogos">
+              <li class="header__SubmenuOptions">
                 <figure>
                   <img src="./css/images/icon-calendar.svg" alt="" />
                 </figure>
                 Calendar
               </li>
-              <li class="header__Submenu--minilogos">
+              <li class="header__SubmenuOptions">
                 <figure>
                   <img src="./css/images/icon-reminders.svg" alt="" />
                 </figure>
                 Reminders
               </li>
-              <li class="header__Submenu--minilogos">
+              <li class="header__SubmenuOptions">
                 <figure>
                   <img src="./css/images/icon-planning.svg" alt="" />
                 </figure>
@@ -55,23 +62,45 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="header__li--submenu2 header__ul--li">
             Company
-            <ul class="header__Submenu">
+            <img
+              class="header__li--up2"
+              src="./css/images/icon-arrow-up.svg"
+              alt=""
+            />
+            <img
+              class="header__li--down2"
+              src="./css/images/icon-arrow-down.svg"
+              alt=""
+            />
+            <ul class="header__Submenu2">
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
             </ul>
           </li>
-          <li>Careers</li>
-          <li>About</li>
+          <li class="header__ul--li">Careers</li>
+          <li class="header__ul--li">About</li>
         </ul>
 
-        <ul class="header__Submenu">
-          <li><button class="header__button">Login</button></li>
-          <li><button class="header__button">Register</button></li>
+        <ul class="header__ul">
+          <li><button class="header__button--login">Login</button></li>
+          <li><button class="header__button--register">Register</button></li>
         </ul>
-      </div>
+      </nav>
+
+      <button class="header__Hamburger">
+        <figure>
+          <img src="./css/images/icon-menu.svg" alt="" />
+        </figure>
+      </button>
+
+      <button class="header__Close">
+        <figure>
+          <img src="./css/images/icon-close-menu.svg" alt="" />
+        </figure>
+      </button>
     </header>
 
     <main>
@@ -102,8 +131,8 @@
           </div>
         </div>
       </section>
-      <section class="rightLateralMain">
-      </section>
+      <section class="rightLateralMain"></section>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
