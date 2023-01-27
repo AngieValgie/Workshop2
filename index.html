@@ -16,15 +16,16 @@
     />
   </head>
   <body>
+    <div class="dark">
     <header class="header">
-      <figure>
+      <figure class="logo">
         <img class="header__Logo" src="/css/images/logo.svg" alt="" />
       </figure>
-
       <nav class="header__nav">
+        
         <ul class="header__ul">
           <li class="header__li--submenu1 header__ul--li">
-            Features
+            <span id="tittle1">Features</span> 
             <img
               class="header__li--up1"
               src="./css/images/icon-arrow-up.svg"
@@ -63,7 +64,7 @@
             </ul>
           </li>
           <li class="header__li--submenu2 header__ul--li">
-            Company
+            <span id="tittle2">Company</span> 
             <img
               class="header__li--up2"
               src="./css/images/icon-arrow-up.svg"
@@ -83,16 +84,18 @@
           <li class="header__ul--li">Careers</li>
           <li class="header__ul--li">About</li>
         </ul>
-
+        
+        
         <ul class="header__ul">
           <li><button class="header__button--login">Login</button></li>
           <li><button class="header__button--register">Register</button></li>
         </ul>
+        
       </nav>
-
       <button class="header__Hamburger">
         <figure>
-          <img src="./css/images/icon-menu.svg" alt="" />
+          <img src="./css/images/icon-menu.svg" alt="haburguer menu" id="hamburguerIcon"/>
+          <img src="./css/images/icon-close-menu.svg" alt="x close" class="header__nav--deactivate" id="xMenu"/>
         </figure>
       </button>
 
@@ -106,7 +109,7 @@
     <main>
       <section class="leftLateralMain">
         <div>
-          <h1>Make <br />remote work</h1>
+          <h1>Make <br class="enter"/>remote work</h1>
           <p>
             Get your team in sync, no matter your location. Streamline processe,
             create team rituals, and watch productivity soar.
@@ -131,8 +134,11 @@
           </div>
         </div>
       </section>
-      <section class="rightLateralMain"></section>
+      <section class="rightLateralMain">
+        <!-- <img src="./css/images/image-hero-desktop.png" alt="hero img" class="imgDesktop"> -->
+      </section>
     </main>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
