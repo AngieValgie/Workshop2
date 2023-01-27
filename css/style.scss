@@ -135,3 +135,68 @@ button {
     display: block;
   }
 }
+
+main{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  padding: 37px 90px 80px 90px;
+
+  .leftLateralMain{
+    width: 60%;
+    padding: 120px 96px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    h1{
+      font-size: 80px;
+      font-weight: 700;
+    }
+
+    p{
+      margin: 45px 0px 35px 0px;
+      font-weight: 500;
+      font-size: 18px;
+      color: hsl(0, 0%, 41%);
+      text-align: justify;
+      width: 430px;
+    }
+
+    button{
+      width: 160px;
+      height: 55px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 700;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: hsl(0, 0%, 8%);
+      color: hsl(0, 0%, 98%);
+    }
+
+    button:hover{
+      background-color: hsl(0, 0%, 98%);
+      color: hsl(0, 0%, 8%);
+      border: solid 1px hsl(0, 0%, 8%);
+    }
+
+    .logos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 115px;
+    }
+  }
+
+  .rightLateralMain{
+    width: 40%;
+    z-index: 2;
+    background-image: url(./images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+
