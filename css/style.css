@@ -33,6 +33,7 @@ button {
 
 .header__nav {
   width: 80%;
+  font-weight: 700;
   gap: 20px;
   display: flex;
   justify-content: space-between;
@@ -44,20 +45,48 @@ button {
 }
 
 .header__ul {
-  border-bottom: 4px solid black;
   gap: 20px;
   display: flex;
   flex-flow: row nowrap;
 }
 
-.header__Submenu {
-  padding: 23px;
-  gap: 10px;
+.header__ul--li {
   display: flex;
+  gap: 8px;
+  align-items: center;
+  color: hsl(0deg, 0%, 41%);
+}
+
+.header__Submenu1,
+.header__Submenu2 {
+  padding: 23px;
+  position: fixed;
+  top: 50px;
+  gap: 10px;
+  display: none;
   flex-direction: column;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.066);
+}
+
+.header__Submenu1 {
+  left: 120px;
+}
+
+.header__Submenu1 li:hover {
+  color: hsl(0deg, 0%, 8%);
+  cursor: pointer;
+}
+
+.header__Submenu2 li:hover {
+  color: hsl(0deg, 0%, 8%);
+  cursor: pointer;
+}
+
+.header__li--down1,
+.header__li--down2 {
+  display: none;
 }
 
 .header__SubmenuOptions {
@@ -65,14 +94,35 @@ button {
   display: flex;
 }
 
+.header .header__nav--active {
+  display: flex;
+}
+
+.header .header__nav--deactivate {
+  display: none;
+}
+
+.header__button--register,
+.header__button--login {
+  color: hsl(0deg, 0%, 41%);
+  font-weight: 700;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.header__button--register:hover,
+.header__button--login:hover {
+  color: hsl(0deg, 0%, 8%);
+  border: 2px solid hsl(0deg, 0%, 8%);
+}
+
 @media (max-width: 800px) {
   .header__nav {
     width: 100%;
     display: none;
     flex-direction: column;
-  }
-  .header .header__nav--active {
-    display: flex;
   }
   .header__ul {
     flex-direction: column;
