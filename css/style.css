@@ -10,18 +10,76 @@ html {
 
 body {
   font-family: "Epilogue", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
 }
 
-header {
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+  width: 80%;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__Close,
+.header__Hamburger {
+  display: none;
+}
+
+.header__ul {
+  border-bottom: 4px solid black;
+  gap: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header__Submenu {
+  padding: 23px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.066);
+}
+
+.header__SubmenuOptions {
+  gap: 10px;
   display: flex;
 }
 
-.header__menus {
-  display: flex;
-}
-
-.header__Info {
-  display: flex;
+@media (max-width: 800px) {
+  .header__nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  .header .header__nav--active {
+    display: flex;
+  }
+  .header__ul {
+    flex-direction: column;
+  }
+  .header__Hamburger {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
