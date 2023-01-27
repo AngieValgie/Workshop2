@@ -1,6 +1,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Epilogue", sans-serif;
 }
+
+header {
+  display: flex;
+}
+
+.header__menus {
+  display: flex;
+}
+
+.header__Info {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
