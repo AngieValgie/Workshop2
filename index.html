@@ -16,7 +16,7 @@
     />
   </head>
   <body>
-    <div class="dark">
+
     <header class="header">
       <figure class="logo">
         <img class="header__Logo" src="/css/images/logo.svg" alt="" />
@@ -24,18 +24,22 @@
       <nav class="header__nav">
         
         <ul class="header__ul">
+          
           <li class="header__li--submenu1 header__ul--li">
-            <span id="tittle1">Features</span> 
-            <img
-              class="header__li--up1"
-              src="./css/images/icon-arrow-up.svg"
-              alt=""
-            />
-            <img
-              class="header__li--down1"
-              src="./css/images/icon-arrow-down.svg"
-              alt=""
-            />
+            <div class="div">
+              <span id="tittle1" class="pointer">Features</span> 
+              <div class="div2">
+              <img
+                class="header__li--up1"
+                src="./css/images/icon-arrow-up.svg"
+                alt=""
+              />
+              <img
+                class="header__li--down1"
+                src="./css/images/icon-arrow-down.svg"
+                alt=""
+              /></div>
+            </div>
             <ul class="header__Submenu1">
               <li class="header__SubmenuOptions">
                 <figure>
@@ -64,25 +68,29 @@
             </ul>
           </li>
           <li class="header__li--submenu2 header__ul--li">
-            <span id="tittle2">Company</span> 
-            <img
-              class="header__li--up2"
-              src="./css/images/icon-arrow-up.svg"
-              alt=""
-            />
-            <img
-              class="header__li--down2"
-              src="./css/images/icon-arrow-down.svg"
-              alt=""
-            />
+            <div class="div">
+              <span id="tittle2" class="pointer">Company</span> 
+              <div class="div2">
+                <img
+                  class="header__li--up2"
+                  src="./css/images/icon-arrow-up.svg"
+                  alt=""
+                />
+                <img
+                  class="header__li--down2"
+                  src="./css/images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+            </div>
             <ul class="header__Submenu2">
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
             </ul>
           </li>
-          <li class="header__ul--li">Careers</li>
-          <li class="header__ul--li">About</li>
+          <li class="header__ul--li fix pointer">Careers</li>
+          <li class="header__ul--li fix2 pointer">About</li>
         </ul>
         
         
@@ -138,7 +146,7 @@
         <!-- <img src="./css/images/image-hero-desktop.png" alt="hero img" class="imgDesktop"> -->
       </section>
     </main>
-    </div>
+    
     <script src="./main.js"></script>
   </body>
 </html>

@@ -113,12 +113,16 @@ button {
 .header__button--register,
 .header__button--login {
   color: hsl(0deg, 0%, 41%);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   padding: 10px 25px;
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid transparent;
+}
+
+.header__button--register {
+  border: 2px solid hsl(0deg, 0%, 41%);
 }
 
 .header__button--register:hover,
@@ -189,6 +193,20 @@ main .rightLateralMain {
   background-repeat: no-repeat;
 }
 
+.div {
+  display: flex;
+  gap: 10px;
+}
+
+.div2 {
+  align-self: center;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 8%);
+}
+
 @media (max-width: 800px) {
   .header__nav {
     width: 100%;
@@ -199,27 +217,58 @@ main .rightLateralMain {
     right: 0px;
     background-color: white;
     height: 100vh;
-    width: 200px;
-    padding: 100px 50px 0px 0px;
+    width: 230px;
+    padding: 100px 20px 0px 0px;
     box-shadow: 0px 0px 10px 1000px rgba(12, 12, 12, 0.459);
+    justify-content: flex-start;
   }
   .header__Submenu1,
   .header__Submenu2 {
-    padding: 23px;
+    padding: 0px;
     position: static;
     display: none;
     flex-direction: column;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 0px 0px;
+    margin-top: 20px;
+    margin-right: 24px;
+  }
+  .header__Submenu2 {
+    margin-right: 60px;
   }
   .header__ul {
     flex-direction: column;
+    gap: 20px;
+    flex-flow: column wrap;
+    align-items: center;
   }
   .header__Hamburger {
     display: block;
     position: fixed;
     right: 20px;
+  }
+  .header__li--submenu1, .header__li--submenu2 {
+    flex-direction: column;
+  }
+  .fix {
+    margin-right: 115px;
+  }
+  .fix2 {
+    margin-right: 130px;
+  }
+  .header__button--register,
+  .header__button--login {
+    border-radius: 10px;
+    width: 180px;
+    background-color: transparent;
+    border: 2px solid transparent;
+  }
+  .header__button--register {
+    border: 2px solid hsl(0deg, 0%, 41%);
+  }
+  .div {
+    margin-right: 85px;
   }
   main {
     flex-direction: column-reverse;
